@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Lucas de Castro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/temaescuro.css" />
+
+    <script>
+      tailwind.config = {
+        content: ["./js/**/*.{html,js}", "./index.html"],
+        theme: {
+          screens: {
+            // prettier-ignore
+            'sm': "400px",
+            // prettier-ignore
+            'md': "768px",
+            // prettier-ignore
+            'lg': "992px",
+            // prettier-ignore
+            'xl': "1500px",
+          },
+          extend: {
+            colors: {
+              vermelho: {
+                main: "#f05e5e",
+                hover: "#e86262",
+              },
+            },
+            fontFamily: {
+              inter: ["Inter", "sans serif"],
+              heebo: ["Heebo", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="temaclaro">
+    <header>
+      <div class="container mx-auto my-2 p-2 flex items-center">
+        <button
+          id="botao-trocatema"
+          class="bg-vermelho-main w-[140px] h-[38px] text-[18px] text-white cursor-pointer rounded outline-none fontFamily-heebo hover:shadow-md ease-in-out duration-500 md:w-[165px] md:h-[45px] md:text-[20px] lg:w-[110px] lg:h-[28px] lg:text-[13px]"
+        >
+          <svg
+            id="icone-sol"
+            class="items-center w-6 h-6 inline display-none md:w-5 md:h-5 lg:w-4 lg:h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            viewBox="0 0 25 24"
+            stroke-width="1"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            />
+          </svg>
+          <svg
+            id="icone-lua"
+            class="items-center w-5 h-5 inline md:w-5 md:h-5 lg:w-4 lg:h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            viewBox="0 0 25 24"
+            stroke-width="1"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+            />
+          </svg>
+          <span id="texto-tema">Tema Escuro</span>
+        </button>
+
+        <section class="flex justify-end grow">
+          <a
+            href="#"
+            class="fontFamily-heebo font-semibold text-vermelho-main text-[23px] mx-2 my-1 hover:scale-105 ease-in-out duration-300 sm:text-[25px] md:text-[34px] md:mx-3 lg:text-[18px]"
+            >Projetos</a
+          >
+          <a
+            href="#"
+            class="fontFamily-heebo font-semibold text-vermelho-main text-[23px] mx-2 my-1 hover:scale-105 ease-in-out duration-300 sm:text-[25px] md:text-[34px] md:mx-3 lg:text-[18px]"
+            >Contato</a
+          >
+        </section>
+      </div>
+    </header>
+    <div class="container mx-auto mt-8">
+      <section
+        class="flex-col w-{900} items-center md:flex-row md:pl-[40px] lg:flex xl:flex"
+      >
+        <div
+          class="flex justify-center order-first md:order-last lg:order-last xl:order-last"
+        >
+          <img
+            src="/img/image.png"
+            alt="Minha foto!"
+            class="max-w-[65%] md:max-w-[80%] rounded-full bg-vermelho-main"
+          />
+        </div>
+        <div class="flex-col justify-center text-center md:text-left mt-4">
+          <h1
+            class="text-[26px] md:text-[38px] md:items-left lg:text-[28px] sm:text-md font-bold fontFamily-heebo"
+          >
+            Olá mundo, sou o
+            <span
+              class="text-vermelho-main hover:bg-[#333333] hover:rounded-xl hover:p-0.5 ease-in-out duration-500"
+              >&lt;Lucas&gt;</span
+            >!
+            <br />
+            <span
+              class="text-vermelho-main hover:bg-[#333333] hover:rounded-xl hover:p-0.5 ease-in-out duration-500"
+              >&lt;Desenvolvedor Front-End/&gt;</span
+            >.
+          </h1>
+          <p
+            class="text-[18px] font-medium text-center md:text-[27px] md:text-left lg:text-[13px] mt-3 fontFamily-heebo"
+          >
+            Bem vindo ao meu portfólio, seu objetivo é mostrar meus
+            conhecimentos por meio de projetos pessoais, boa navegação!
+          </p>
+
+          <a href="https://github.com/">
+            <svg
+              class="inline w-8 h-8 mt-3 hover:cursor-pointer hover:scale-105 ease-in-out duration-200"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2.24669C6.475 2.24669 2 6.72169 2 12.2467C2 16.6717 4.8625 20.4092 8.8375 21.7342C9.3375 21.8217 9.525 21.5217 9.525 21.2592C9.525 21.0217 9.5125 20.2342 9.5125 19.3967C7 19.8592 6.35 18.7842 6.15 18.2217C6.0375 17.9342 5.55 17.0467 5.125 16.8092C4.775 16.6217 4.275 16.1592 5.1125 16.1467C5.9 16.1342 6.4625 16.8717 6.65 17.1717C7.55 18.6842 8.9875 18.2592 9.5625 17.9967C9.65 17.3467 9.9125 16.9092 10.2 16.6592C7.975 16.4092 5.65 15.5467 5.65 11.7217C5.65 10.6342 6.0375 9.73419 6.675 9.03419C6.575 8.78419 6.225 7.75919 6.775 6.38419C6.775 6.38419 7.6125 6.12169 9.525 7.40919C10.325 7.18419 11.175 7.07169 12.025 7.07169C12.875 7.07169 13.725 7.18419 14.525 7.40919C16.4375 6.10919 17.275 6.38419 17.275 6.38419C17.825 7.75919 17.475 8.78419 17.375 9.03419C18.0125 9.73419 18.4 10.6217 18.4 11.7217C18.4 15.5592 16.0625 16.4092 13.8375 16.6592C14.2 16.9717 14.5125 17.5717 14.5125 18.5092C14.5125 19.8467 14.5 20.9217 14.5 21.2592C14.5 21.5217 14.6875 21.8342 15.1875 21.7342C17.1727 21.064 18.8977 19.7882 20.1198 18.0862C21.3419 16.3843 21.9995 14.3419 22 12.2467C22 6.72169 17.525 2.24669 12 2.24669Z"
+                fill="#f05e5e"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucas-de-castro-patr%C3%A3o-rezende-silva-b41592164/"
+          >
+            <svg
+              class="inline w-9 h-9 mt-3 hover:cursor-pointer hover:scale-105 ease-in-out duration-200"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 4.32353V19.6765C21 20.0275 20.8606 20.3641 20.6123 20.6123C20.3641 20.8606 20.0275 21 19.6765 21H4.32353C3.97251 21 3.63586 20.8606 3.38765 20.6123C3.13944 20.3641 3 20.0275 3 19.6765V4.32353C3 3.97251 3.13944 3.63586 3.38765 3.38765C3.63586 3.13944 3.97251 3 4.32353 3H19.6765C20.0275 3 20.3641 3.13944 20.6123 3.38765C20.8606 3.63586 21 3.97251 21 4.32353ZM8.29412 9.88235H5.64706V18.3529H8.29412V9.88235ZM8.53235 6.97059C8.53375 6.77036 8.49569 6.57182 8.42035 6.3863C8.34502 6.20078 8.23387 6.03191 8.09328 5.88935C7.95268 5.74678 7.78537 5.6333 7.60091 5.5554C7.41646 5.47749 7.21846 5.43668 7.01824 5.43529H6.97059C6.5634 5.43529 6.17289 5.59705 5.88497 5.88497C5.59705 6.17289 5.43529 6.5634 5.43529 6.97059C5.43529 7.37777 5.59705 7.76828 5.88497 8.05621C6.17289 8.34413 6.5634 8.50588 6.97059 8.50588C7.17083 8.51081 7.37008 8.47623 7.55696 8.40413C7.74383 8.33202 7.91467 8.2238 8.0597 8.08565C8.20474 7.94749 8.32113 7.78212 8.40223 7.59897C8.48333 7.41582 8.52755 7.21848 8.53235 7.01824V6.97059ZM18.3529 13.2071C18.3529 10.6606 16.7329 9.67059 15.1235 9.67059C14.5966 9.6442 14.0719 9.75644 13.6019 9.9961C13.1318 10.2358 12.7328 10.5945 12.4447 11.0365H12.3706V9.88235H9.88235V18.3529H12.5294V13.8476C12.4911 13.3862 12.6365 12.9283 12.9339 12.5735C13.2313 12.2186 13.6567 11.9954 14.1176 11.9524H14.2182C15.06 11.9524 15.6847 12.4818 15.6847 13.8159V18.3529H18.3318L18.3529 13.2071Z"
+                fill="#f05e5e"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="flex-col items-center py-6 md:flex-row lg:flex">
+        <div class="bg-vermelho-main max-w-fit p-2 my-2 md:mx-2 h-40 rounded">
+          <h1 class="text-xl text-white font-semibold">HTML5 & Javascript</h1>
+          <p class="text-xs text-white mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="bg-vermelho-main max-w-fit p-2 my-2 md:mx-2 h-40 rounded">
+          <h1 class="text-xl text-white font-semibold">Card exemplo 2!</h1>
+          <p class="text-xs text-white mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="bg-vermelho-main max-w-fit p-2 my-2 md:mx-2 h-40 rounded">
+          <h1 class="text-xl text-white font-semibold">Card exemplo 3!</h1>
+          <p class="text-xs text-white mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="/JS/temaescuro.js"></script>
+  <script src="/JS/script.js"></script>
+</html>
